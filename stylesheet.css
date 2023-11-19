@@ -1,39 +1,39 @@
 :root {
-    --accent-color-light: rgb(37, 176, 231);
-    --accent-color-dark: rgb(1, 132, 165);
-    --text-color-light: #ccc;
-    --text-color-light-secondary: #aaa;
-    --text-color-dark: #222;
-    --text-color-dark-secondary: #555;
-    --background-color-dark: #222;
-    --background-color-light:#ddd;
+    --accent-color-darkmode: #239cff;
+    --accent-color-lightmode: #0070cc;
+    --text-color-darkmode: #cccccc;
+    --text-color-darkmode-secondary: #949494;
+    --text-color-lightmode: #333333;
+    --text-color-lightmode-secondary: #666666;
+    --background-color-dark: #222222;
+    --background-color-light:#e5e5e5;
 }
 
 html {font-size:16px}
 
 body { font-family: Inter, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem; font-weight: 400;
-    color: var(--text-color-light);
+    color: var(--text-color-darkmode);
     background: var(--background-color-dark)
 }
 @media screen and (prefers-color-scheme: light) {
     body {
         background-color: var(--background-color-light);
-        color: var(--text-color-dark);
+        color: var(--text-color-lightmode);
     }   
 }
 
-.container {max-width: 40rem; margin:auto auto; padding:0;}
+.container {max-width: 40rem; margin:auto auto; padding:0 1rem;}
 
 p, ul, ol, h1, h2, h3, h4, h5, h6 {padding:0; margin:2rem 0;}
 
-a {color: var(--text-color-light-secondary); text-decoration: none; }
+a {color: var(--text-color-darkmode-secondary); text-decoration: none; }
 @media screen and (prefers-color-scheme: light) {
-    a {color: var(--text-color-dark-secondary);}    
+    a {color: var(--text-color-lightmode-secondary);}    
 }
-a:hover {color: var(--accent-color-light); -webkit-text-fill-color: initial;}
+a:hover {color: var(--accent-color-darkmode); -webkit-text-fill-color: initial;}
 @media screen and (prefers-color-scheme: light) {
-    a:hover {color: var(--accent-color-dark) }
+    a:hover {color: var(--accent-color-lightmode) }
 }
 a,a:hover {transition: all linear 0.2s;}
 
@@ -71,14 +71,13 @@ footer {
 .squint {
     min-height:10vw;
     transform: skewY(-2.5deg); transform-origin: 0;
-
 }
 
 .text-centered {text-align: center;}
 .text-xs {font-size:0.5rem;}
 .text-sm {font-size:0.8rem;}
 .text-lg {font-size:1.5rem; font-weight:400; }
-.text-xl {font-size:6rem; font-weight:700;}
+.text-xl {font-size:7rem; font-weight:700;}
 .text-gradient {
     background: linear-gradient(45deg, #926,#16c,#084);
     -webkit-text-fill-color: transparent;
