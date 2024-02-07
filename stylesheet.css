@@ -14,7 +14,8 @@ html {font-size:16px}
 body { font-family: Inter, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.2rem; font-weight: 400;
     color: var(--text-color-darkmode);
-    background: var(--background-color-dark)
+    background: var(--background-color-dark);
+    padding-top:1rem;
 }
 @media screen and (prefers-color-scheme: light) {
     body {
@@ -27,7 +28,7 @@ body { font-family: Inter, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
 
 p, ul, ol, h1, h2, h3, h4, h5, h6 {padding:0; margin:2rem 0;}
 
-a {color: var(--text-color-darkmode-secondary); text-decoration: none; }
+a {color: var(--text-color-darkmode-secondary); text-decoration: underline; }
 @media screen and (prefers-color-scheme: light) {
     a {color: var(--text-color-lightmode-secondary);}    
 }
@@ -36,11 +37,13 @@ a:hover {color: var(--accent-color-darkmode); -webkit-text-fill-color: initial;}
     a:hover {color: var(--accent-color-lightmode) }
 }
 a,a:hover {transition: all linear 0.2s;}
+p a { text-decoration: underline;}
 
 h1, h2, h3, h4, h5 {padding: 0; margin:4rem 0 1rem; text-decoration: none;}
 h1 { color: var(--main-accent-color);}
+h2 {font-weight: 500;}
 
-li {padding:0.2rem 0;}
+li {padding:0.5rem 0;}
 
 footer {
     margin-top: 10vw;
@@ -114,3 +117,12 @@ span.redacted {
 span.redacted:hover {
     color: inherit; background: none;
 }
+
+.badge { 
+    display: inline-block; 
+    padding:0.25rem 0.5rem; 
+    border: 2px solid var(--text-color-darkmode-secondary); 
+    border-radius: 1rem; 
+    color: var(--text-color-darkmode-secondary); 
+    font-size: 0.8rem;
+    font-weight: 700;}
