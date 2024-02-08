@@ -1,6 +1,6 @@
 :root {
-    --accent-color-darkmode: #239cff;
-    --accent-color-lightmode: #0070cc;
+    --accent-color-darkmode: #d63200;
+    --accent-color-lightmode: #b82b00;
     --text-color-darkmode: #cccccc;
     --text-color-darkmode-secondary: #949494;
     --text-color-lightmode: #333333;
@@ -71,10 +71,6 @@ footer {
     background: linear-gradient(45deg, rgb(1rgb(21, 116, 233)3rgb(9, 184, 96)21),#16c,#084);
     /* transform: skewY(-5deg); transform-origin: 0; */
 }
-.squint {
-    min-height:10vw;
-    transform: skewY(-2.5deg); transform-origin: 0;
-}
 
 .text-centered {text-align: center;}
 .text-xs {font-size:0.5rem;}
@@ -82,7 +78,8 @@ footer {
 .text-lg {font-size:1.5rem; font-weight:400; }
 .text-xl {font-size:7rem; font-weight:700;}
 .text-gradient {
-    background: linear-gradient(45deg, #926,#16c,#084);
+    /* background: linear-gradient(45deg, #926,#16c,#084); */
+    background: linear-gradient(45deg, #d3a200 10%,#d63200,#d30a6f, #076ce9 90%);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
